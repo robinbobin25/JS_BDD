@@ -20,8 +20,8 @@ describe('check filter by price', function () {
 
         categoryPage.sortByPriceLink.click();
 
-        expect(categoryPage.firstPrice).toBeCloseTo(expectedMinPrice);
-        expect(categoryPage.lastPrice).toBeCloseTo(expectedMaxPrice);
+        expect(categoryPage.firstPrice).toBeGreaterThan(expectedMinPrice);
+        expect(categoryPage.lastPrice).toBeLessThan(expectedMaxPrice);
 
     });
 

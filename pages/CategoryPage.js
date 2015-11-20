@@ -9,8 +9,8 @@ var CategoryPage = function(){
     this.expectedMaxPrice = element(by.css('.is_empty_items [href$="?fp1=100000&fp2=150000"]'));
     this.sortByPriceLink = element(by.css('[href$="?fp1=100000&fp2=150000&sort=price"]'));
 
-    this.firstPrice = element(by.xpath('(//div[@class="price"]/strong)[1]')).getText();
-    this.lastPrice = element(by.xpath('(//div[@class="price"]/strong)[last()]')).getText();
+    this.firstPrice = element.all(by.xpath('//div[@class="price"]/strong')).first().getText();
+    this.lastPrice = element.all(by.xpath('//div[@class="price"]/strong')).last().getText();
 
    /* for scenario2 */
     this.hondaManufacturer = element(by.xpath('//a[@href="http://pn.com.ua/ct/3011/?fo=492"]'));
