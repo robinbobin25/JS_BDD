@@ -12,7 +12,7 @@ describe('check filter by manufacturer', function () {
 
         mainPage.carCategory.click();
 
-        var manufacturerName = categoryPage.hondaManufacturer.getText(); // save for the future
+        var manufacturerName = categoryPage.hondaManufacturer.getText();
         categoryPage.hondaManufacturer.click();
 
         expect(categoryPage.productName).toContain(manufacturerName);

@@ -12,10 +12,10 @@ describe('check filter by price', function () {
 
         mainPage.carCategory.click();
 
-        var expectedMinPrice = categoryPage.expectedMinPrice.getText(); // save for the future
+        var expectedMinPrice = categoryPage.expectedMinPrice.getText();
         categoryPage.expectedMinPrice.click();
 
-        var expectedMaxPrice = categoryPage.expectedMaxPrice.getText(); // save for the future
+        var expectedMaxPrice = categoryPage.expectedMaxPrice.getText();
         categoryPage.expectedMaxPrice.click();
 
         categoryPage.sortByPriceLink.click();
